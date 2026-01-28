@@ -1,0 +1,54 @@
+/**
+ * Get Started Button
+ * Primary CTA button with gradient background and purple theme
+ */
+
+.btn-get-started {
+  border: 1px solid var(--border-light-purple);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) 27px;
+  position: relative;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-button);
+  background-image:
+    url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 161 50\' xmlns=\'http://www.w3.org/2000/svg\' preserveAspectRatio=\'none\'><rect x=\'0\' y=\'0\' height=\'100%\' width=\'100%\' fill=\'url(%23grad)\' opacity=\'0.20000000298023224\'/><defs><radialGradient id=\'grad\' gradientUnits=\'userSpaceOnUse\' cx=\'0\' cy=\'0\' r=\'10\' gradientTransform=\'matrix(7.2721 1.95 -0.27713 2.2584 88.279 5.5)\'><stop stop-color=\'rgba(222,204,204,0.52)\' offset=\'0\'/><stop stop-color=\'rgba(183,164,178,0.64)\' offset=\'0.25\'/><stop stop-color=\'rgba(144,124,152,0.76)\' offset=\'0.5\'/><stop stop-color=\'rgba(104,84,126,0.88)\' offset=\'0.75\'/><stop stop-color=\'rgba(65,44,100,1)\' offset=\'1\'/></radialGradient></defs></svg>'),
+    linear-gradient(-1.2828520823404688e-7deg, rgba(0, 0, 0, 0) 59%, rgba(255, 255, 255, 0.2) 95%),
+    linear-gradient(180.8469192350252deg, rgba(0, 0, 0, 0) 71.59%, rgba(255, 255, 255, 0.2) 97.938%),
+    url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 161 50\' xmlns=\'http://www.w3.org/2000/svg\' preserveAspectRatio=\'none\'><rect x=\'0\' y=\'0\' height=\'100%\' width=\'100%\' fill=\'url(%23grad2)\' opacity=\'1\'/><defs><radialGradient id=\'grad2\' gradientUnits=\'userSpaceOnUse\' cx=\'0\' cy=\'0\' r=\'10\' gradientTransform=\'matrix(-1.9618 -0.65 0.092375 -0.60924 116.35 21)\'><stop stop-color=\'rgba(108,48,207,0.38)\' offset=\'0\'/><stop stop-color=\'rgba(69,27,138,0.295)\' offset=\'0.5\'/><stop stop-color=\'rgba(30,6,69,0.21)\' offset=\'1\'/></radialGradient></defs></svg>'),
+    linear-gradient(90deg, var(--primary-purple) 0%, var(--primary-purple) 100%);
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xl);
+  color: var(--text-white);
+  text-shadow: 0px 2px 2.6px var(--text-shadow-light);
+  line-height: normal;
+}
+
+.btn-get-started:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-button-hover);
+}
+
+.btn-get-started:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-button);
+}
+
+.btn-get-started:focus {
+  outline: 2px solid var(--border-light-purple);
+  outline-offset: 2px;
+}
+
+.btn-get-started:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-get-started:disabled:hover {
+  transform: none;
+  box-shadow: var(--shadow-button);
+}

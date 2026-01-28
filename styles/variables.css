@@ -1,0 +1,83 @@
+/**
+ * Design System Variables
+ * Design tokens extracted from Figma designs
+ * Use these variables throughout components for consistency
+ */
+
+:root {
+  /* Colors - Primary */
+  --primary-purple: rgb(147, 102, 221);
+  --primary-purple-dark: rgb(104, 84, 126);
+  --primary-purple-darker: rgb(65, 44, 100);
+
+  /* Colors - Borders */
+  --border-light-purple: #dccaf9;
+
+  /* Colors - Text */
+  --text-white: #ffffff;
+  --text-shadow-light: rgba(213, 180, 180, 0.2);
+
+  /* Colors - Background overlays */
+  --overlay-white-20: rgba(255, 255, 255, 0.2);
+  --overlay-black-transparent: rgba(0, 0, 0, 0);
+
+  /* Shadows - Button elevation */
+  --shadow-purple-sm: 0px 1px 3px 0px rgba(111, 31, 224, 0.29);
+  --shadow-purple-md: 0px 5px 5px 0px rgba(111, 31, 224, 0.26);
+  --shadow-purple-lg: 0px 12px 7px 0px rgba(111, 31, 224, 0.15);
+  --shadow-purple-xl: 0px 21px 8px 0px rgba(111, 31, 224, 0.04);
+  --shadow-purple-2xl: 0px 33px 9px 0px rgba(111, 31, 224, 0.01);
+
+  --shadow-button:
+    var(--shadow-purple-2xl),
+    var(--shadow-purple-xl),
+    var(--shadow-purple-lg),
+    var(--shadow-purple-md),
+    var(--shadow-purple-sm);
+
+  --shadow-button-hover:
+    0px 35px 10px 0px rgba(111, 31, 224, 0.02),
+    0px 23px 9px 0px rgba(111, 31, 224, 0.06),
+    0px 14px 8px 0px rgba(111, 31, 224, 0.18),
+    0px 7px 6px 0px rgba(111, 31, 224, 0.30),
+    0px 2px 4px 0px rgba(111, 31, 224, 0.35);
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-family-primary: 'Lora', serif;
+  --font-family-secondary: system-ui, -apple-system, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+}

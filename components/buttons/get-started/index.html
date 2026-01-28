@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started Button - Quickpolicy Design System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Design Tokens -->
+    <link rel="stylesheet" href="../../../styles/variables.css">
+
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="get-started.css">
+
+    <style>
+        /* Demo page styles only */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-secondary);
+            background-color: #1a1a1a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .demo-header {
+            padding: var(--spacing-2xl);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .demo-header h1 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .demo-header p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .demo-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-2xl);
+            padding: var(--spacing-3xl);
+            flex-wrap: wrap;
+        }
+
+        .demo-section {
+            text-align: center;
+        }
+
+        .demo-section h2 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-lg);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .demo-footer {
+            padding: var(--spacing-lg);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: var(--font-size-sm);
+        }
+    </style>
+</head>
+<body>
+    <header class="demo-header">
+        <h1>Get Started Button</h1>
+        <p>Primary CTA button with gradient background and elevation</p>
+    </header>
+
+    <main class="demo-container">
+        <div class="demo-section">
+            <h2>Default State</h2>
+            <button class="btn-get-started">Get started</button>
+        </div>
+
+        <div class="demo-section">
+            <h2>Hover State</h2>
+            <button class="btn-get-started" style="transform: translateY(-2px); box-shadow: var(--shadow-button-hover);">Get started</button>
+        </div>
+
+        <div class="demo-section">
+            <h2>Disabled State</h2>
+            <button class="btn-get-started" disabled>Get started</button>
+        </div>
+    </main>
+
+    <footer class="demo-footer">
+        <p>Quickpolicy Design System • Component Demo</p>
+    </footer>
+</body>
+</html>
