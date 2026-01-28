@@ -2,6 +2,12 @@
 
 A professional design system built from Figma designs, converted to clean HTML and CSS components for easy implementation.
 
+## 🌐 Live Demo
+
+**[View Component Gallery →](https://kenechukwu-xo.github.io/Figma-component-design-system-for-Quickpolicy-/)**
+
+Browse all components with live previews, search functionality, and interactive examples.
+
 ## 📋 Overview
 
 This repository contains production-ready UI components converted from Figma designs. Each component is built with:
